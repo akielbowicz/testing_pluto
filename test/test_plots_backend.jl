@@ -2,8 +2,8 @@ using Plots, Test
 
 function execute(filename::AbstractString)
     try
-        s = include(filename)
-        println(filename,s)
+        result = include(filename)
+        println(filename,," ", result)
         return true
     catch e
         print(e.message)
@@ -14,5 +14,5 @@ end
 @testset "Override Plot backend" begin
     unicodeplots()
     @test execute("../notebooks/test_plot.jl")
-    @test execute("../notebooks/test_plotlyjs.jl")
+    @test execute("../notebooks/test_plot_plotlyjs.jl")
 end
