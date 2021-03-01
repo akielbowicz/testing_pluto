@@ -3,7 +3,7 @@ using Plots, Test
 function execute(filename::AbstractString)
     try
         result = include(filename)
-        println(filename,," ", result)
+        println(filename," ", result)
         return true
     catch e
         print(e.message)
