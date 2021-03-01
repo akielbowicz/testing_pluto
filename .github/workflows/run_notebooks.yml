@@ -33,6 +33,6 @@ jobs:
             ${{ runner.os }}-test-${{ env.cache-name }}-
             ${{ runner.os }}-test-
             ${{ runner.os }}-
-      # - uses: julia-actions/julia-buildpkg@v1
+      - uses: julia-actions/julia-buildpkg@v1
       # - uses: julia-actions/julia-runtest@v1
       - run: julia --color=yes --check-bounds=yes  --depwarn=yes --project -e 'cd("test");include("runtests.jl")'
