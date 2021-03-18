@@ -45,7 +45,7 @@ jobs:
                   run(`$(npm_cmd()) install highlight.js`);
                   using Franklin;
                   optimize(;minify=false);
-                  mkdir("__site");
+                  
 
                   "== Place rendered notebooks in the website folder ==";
                   cp("../notebooks", "__site/notebooks");
