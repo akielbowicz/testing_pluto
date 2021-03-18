@@ -56,7 +56,7 @@ jobs:
                   <html>
                   <head><meta charset="utf-8"><script>
                   window.location.href=\"BLABLABLA\"</script></head>
-                  <body></body></html>""");
+                  <body></body></html>""");'
                   # write("__site/CNAME", "computationalthinking.mit.edu");'
             - name: Build and Deploy
               uses: JamesIves/github-pages-deploy-action@releases/v3
